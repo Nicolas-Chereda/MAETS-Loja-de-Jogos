@@ -70,6 +70,9 @@ const registerModalContent = `
     <span id="closeBtn">×</span>
     <h2>Registrar</h2>
     <form id="registerForm">
+
+        <p>*Por favor, não utilize seus dados reais*</p>
+
         <label for="regName">Nome:</label>
         <input type="text" id="regName" maxlength="12" required>
         

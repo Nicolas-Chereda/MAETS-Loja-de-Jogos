@@ -178,3 +178,15 @@
         function scrollToTop() {
             window.scrollTo({ top: 0, behavior: 'smooth' });
         }
+
+    
+
+//Mandar pra página de resultados
+        // Seleciona o botão dentro da classe 'carrinho'
+        const botaoCarrinho = document.querySelector('.carrinho button');
+
+        // Adiciona um evento de clique no botão
+        botaoCarrinho.addEventListener('click', () => {
+            // Redireciona para a página resultados.html
+            window.location.href = 'resultados.html';
+        });
