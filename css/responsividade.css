@@ -1,0 +1,736 @@
+/*Barra de navegação e menu lateral*/
+@media only screen and (max-width: 1000px){
+
+    .navbar{
+        height: 10%;
+        display: flex;
+        position: sticky;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+    }
+
+    .navbar .menu-logo{
+        flex: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 15px;
+    }
+    
+    .navbar .menu-logo img{
+        width: 120px;
+    }
+
+    .menu-login{
+        position: absolute;
+        right: 2%;
+        height: 100%;
+    }
+
+
+    /*Parte do menu lateral*/
+    .navbar .menu-itens .botao-menu{
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        align-items: center;
+        width: 100%;
+        margin-left: 20%;
+    }
+
+    .navbar .menu-itens .abrir-menu{
+        margin-top: 3%;
+        border: none;
+        background-color: rgb(21,29,39);
+        color: white;
+        font-size: 2.5em;
+        cursor: pointer;
+        transition: transform 0.5s ease;
+    }
+
+    .navbar .menu-itens{
+        order: -1;
+        display: flex;
+        width: 25%;
+        align-items: center;
+        flex-direction: column;
+        position: fixed;
+        z-index: 100;
+    }
+
+    .navbar .container-menu{
+        width: 100vw;
+        height: 100vh;
+        background-color: rgb(0, 0, 0, 0.5);
+        position: fixed;
+        top: 0;
+        left: 25%;
+        display: none;
+        z-index: 100;
+    }
+
+    .navbar .menu-itens .menu-lateral{
+        justify-content: left;
+        width: 100%;
+        height: 100vh;
+        display: none;
+        position: relative;
+        z-index: 100;
+     
+    }
+    
+    .navbar .menu-itens ul{
+        list-style: none;
+        display: flex;
+        align-items: left;
+        flex-direction: column;
+        position: relative;
+        z-index: 100;
+        justify-content: start;
+       
+    }
+    
+    .navbar .menu-itens ul li{
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        height: 12%;
+        position: relative;
+        z-index: 100;
+        margin: 0 0 2% 0;
+    }
+    
+    .navbar .menu-itens ul li a{
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        color: white;
+        font-size: 16px;
+        text-decoration: none;
+        width: 100%;
+        padding-left: 17%;
+        position: relative;
+        z-index: 100;
+    }
+    
+    .navbar .menu-itens ul li i{
+        font-size: 16px;
+        padding-right: 5px;
+        width: 20px;
+    }
+
+    .navbar .menu-itens .home:hover{
+        color: #D32D2D;
+    }
+    
+    .navbar .menu-itens .sobre:hover{
+        color: #007C92;
+    }
+    
+    .navbar .menu-itens .produtos:hover{
+        color: #4F7942;
+    }
+    
+    .navbar .menu-itens .galeria:hover{
+        color: #C99A9A;
+    }
+    
+    .navbar .menu-itens .contato:hover{
+        color: #E2725B;
+    } 
+}
+
+
+
+/*Responsividade Página Home*/
+@media only screen and (max-width: 1000px){
+    main#home{
+        width: 100%;
+        align-items: center;
+        margin: 0;
+        padding: 10%;
+    }
+}
+
+
+/*Cards da página produtos*/
+
+
+@media only screen and (max-width: 1000px){
+    main.pg-produtos{
+        padding: 0 10%;
+    }
+    
+    .card{
+        flex: 45%;
+        margin: 1%;
+        max-width: 45%;
+    }
+
+    .card h3{
+        font-size: 12px;
+    }
+}
+
+
+
+/*Responsividade Página Sobre*/
+@media screen and (max-width: 1000px) {
+    #body-sobre{
+        overflow-y: auto;
+    }
+
+    main#sobre {
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    #img-esquerda,
+    #img-direita {
+        flex: none;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap; 
+        justify-content: center;
+        gap: 10px;
+    }
+
+    #sobre #img-esquerda img,
+    #sobre #img-direita img {
+        max-width: 100px; 
+        position: relative;
+        margin: 5px;
+    }
+
+    #texto-sobre {
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+        flex: none;
+        width: 100%;
+        text-align: center;
+        padding: 0 1rem;
+    }
+
+    main#sobre .jogo-1 img{
+        display: none;
+    }
+
+    main#sobre .jogo-2 img{
+        top: -20%;
+        left: 150%;
+    }
+
+    main#sobre .jogo-6 img{
+        position: relative;
+        top: 30%;
+        left: 150%;
+        max-width: 220px;
+        opacity: 1;
+    }
+
+    main#sobre .jogo-8 img{
+        position: relative;
+        top: 90%;
+        right: 150%;
+        max-width: 130px;
+        opacity: 0.6;
+    }
+
+    main#sobre .jogo-9 img{
+        position: relative;
+        right: -150%;
+        max-width: 180px;
+        opacity: 1;
+    }
+
+    main#sobre .jogo-10 img{
+        position: relative;
+        right: -10%;
+        max-width: 110px;
+        opacity: 0.6;
+    }
+
+    main#sobre .jogo-11 img{
+        position: relative;
+        right: 170%;
+        max-width: 220px;
+        opacity: 1;
+    }
+
+    main#sobre .jogo-12 img{
+        position: relative;
+        right: -160%;
+        max-width: 220px;
+        opacity: 1;
+    }
+
+    main#sobre .jogo-13 img{
+        display: none;
+    }
+
+    main#sobre .jogo-14 img{
+        display: none;
+    } 
+
+    .footer-sobre{
+        position: inherit;
+    }
+}
+
+/* Responsividade Galeria*/
+@media screen and (max-width: 1000px){
+    main.galeria section{
+        display: none;
+        text-align: center;
+    }
+    
+    main.galeria section .container-layout{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        background: transparent;
+        margin: auto;
+        margin-top: 1%;
+    }
+    
+    
+    main.galeria section .carousel{
+        background-color: transparent;
+        box-shadow: none;
+        width: 100%;
+    }
+    
+    main.galeria section .carousel img, main.galeria section .carousel video{
+        margin: auto;
+        width: auto;
+        height: 50vh;
+    }
+    
+    main.galeria section.active-carrossel{
+        display: block;
+    }
+    
+    main.galeria .nav-imagens{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+    
+    main.galeria .nav-imagens img, main.galeria .nav-imagens video{
+        cursor: pointer;
+        margin-left: 1%;
+        display: block;
+        height: 9.1vh;
+    }
+    
+    
+    .video-itemG{
+        width: fit-content;
+        position: relative; /* Necessário para posicionar o ícone */
+        display: inline-block; /* Garante alinhamento correto */
+        z-index: 0;
+    }
+    
+    .video-itemG video {
+        display: block; /* Garante que o vídeo não seja tratado como inline */
+        min-width: 100%; /* O vídeo ocupa 100% da largura da div */
+        min-height: 100%; /* Mantém a proporção do vídeo */
+    }
+    
+    .video-itemG .video-icon {
+        content: "▶"; /* Ícone do vídeo */
+        font-size: 20px; /* Ajuste do tamanho do ícone */
+        color: white; /* Cor do ícone */
+        background-color: rgba(0, 0, 0, 0.5); /* Fundo semitransparente */
+        position: absolute; /* Posiciona sobre o vídeo */
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); /* Centraliza o ícone */
+        pointer-events: none; /* Garante que o ícone não interfira nos cliques */
+        padding: 5px 10px; /* Ajusta o espaço interno do ícone */
+    }
+    
+    .ant, .prox {
+        cursor: pointer;
+        font-size: 24px;
+        padding: 10px;
+        color: white;
+        background-color: transparent;
+        border: none;
+        border-radius: 5px;
+    }
+}
+
+/* Responsividade página dos jogos*/
+
+@media only screen and (max-width: 1000px){
+    main.jogos{
+        max-width: 900px;
+        margin: auto;
+    }
+
+    main.jogos h2{
+        font-weight: 500;
+        margin-left: 2%;
+        margin-bottom: 2%;
+    }
+
+    .container-layout{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 2%;
+        background: transparent;
+    }
+
+    .container-carrossel{
+        flex: 100%;
+    }
+
+    .carousel {
+        position: relative;
+        max-width: 100%;
+        overflow: hidden;
+        box-shadow: rgb(0, 0, 0, 0.75) 0px 3px 5px 0px;
+        background-color: black;
+        margin: auto;
+    }
+
+    .carousel img, .carousel video {
+        width: 100%;
+        display: none;
+        margin: auto;
+    }
+
+    .container-carrossel .undertale img, .container-carrossel .undertale video{
+        max-width: 80%;
+        height: 100%;
+        margin: 0 auto;
+    }
+
+    .carousel img.active, .carousel video.active {
+        display: block; 
+    }
+
+    .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 24px;
+        padding: 10px;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.5);
+        border: none;
+        border-radius: 5px;
+        z-index: 100; 
+    }
+
+    .prev { left: 10px; }
+    .next { right: 10px; }
+
+    .nav-imagens{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .nav-imagens img, .nav-imagens video{
+        max-width: 19%;
+        cursor: pointer;
+        display: block;
+        margin: 0;
+        margin-top: 1%;
+    }
+
+    .undertale .nav-imagens img, .undertale .nav-imagens video{
+        max-width: 5%;
+        cursor: pointer;
+        display: block;
+    }
+
+    .video-item {
+        position: relative; /* Necessário para posicionar o ícone */
+        display: inline-block; /* Garante alinhamento correto */
+        width: 100%; /* Mantém o tamanho consistente */
+        max-width: 20%; /* Ajusta ao estilo das nav-imagens */
+        z-index: 0;
+        margin: 0;
+        margin-top: 1%;
+    }
+
+    .video-item video {
+        display: block; /* Garante que o vídeo não seja tratado como inline */
+        min-width: 100%; /* O vídeo ocupa 100% da largura da div */
+        min-height: 100%; /* Mantém a proporção do vídeo */
+    }
+
+    .video-item .video-icon {
+        content: "▶"; /* Ícone do vídeo */
+        font-size: 20px; /* Ajuste do tamanho do ícone */
+        color: white; /* Cor do ícone */
+        background-color: rgba(0, 0, 0, 0.5); /* Fundo semitransparente */
+        position: absolute; /* Posiciona sobre o vídeo */
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); /* Centraliza o ícone */
+        pointer-events: none; /* Garante que o ícone não interfira nos cliques */
+        padding: 5px 10px; /* Ajusta o espaço interno do ícone */
+    }
+
+    .nav-imagens img.active-nav, 
+    .nav-imagens video.active-nav {
+        border: 2px solid white; /* Define a borda branca */
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* Efeito de brilho opcional */
+    }
+
+
+    .descricao{
+        order: -1;
+        width: 100%;
+        background-color: rgb(28, 40, 56,);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    .responsividade-descricao{
+        display: flex;
+        margin-bottom: 2%;
+        width: 100%;
+    }
+
+    .responsividade-imagem{
+        flex: 45%;
+    }
+
+    .responsividade-descricao img{
+        max-width: 100%;
+    }
+
+    .responsividade-descricao .responsividade-detalhes{
+        flex: 55%;
+        margin-left: 2%;
+    }
+
+    .responsividade-descricao .responsividade-detalhes p{
+        font-weight: 400;
+        font-size: 11px;
+        line-height: 1.5;
+        max-width: 100%;
+        display: block;
+        margin-bottom: 2%;
+    }
+
+    .responsividade-descricao .responsividade-detalhes h3{
+        font-size: 11px;
+        color: #26c1dc;
+        font-weight: 600;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: block;
+        margin-top: 1%;
+    }
+
+    .descricao .marcadores{
+        display: flex;
+        flex-flow: column;
+        width: 100%;
+        margin-bottom: 1%;
+    }
+
+    .descricao .marcadores p{
+        margin-bottom: 0;
+    }
+
+    .descricao .marcador{
+        font-size: 10px;
+        margin-right: 2%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: left;
+    }
+
+    .descricao .marcador p{
+        background-color: #243f44;
+        padding: 2px 4px;
+        color: #26c1dc;
+        margin-right: 1%;
+        border-radius: 2px;
+    }
+
+    .descricao .marcador p:hover{
+        background-color: #25a3b9b3;
+        color: white;
+        cursor: default;
+    }
+
+    .container-carrinho{
+        display: flex;
+        flex-direction: column;
+        margin-left: 2%;
+    }
+
+    .carrinho{
+        margin-top: 2%;
+        display: flex;
+        flex-direction: row;
+        max-width: fit-content;
+        background-color: #243f44;
+        padding: 5px;
+        align-items: center;
+    }
+
+    .carrinho h3{
+        background-color: rgb(47, 169, 47);
+        max-width: fit-content;
+        padding: 4px 8px;
+        border-radius: 2px;
+        font-size: 14px;
+        font-weight: 500;
+        cursor: pointer;
+    }
+
+    .carrinho p{
+        padding: 2px 8px;
+        font-size: 14px;
+    }
+
+    .carrinho h3.silksong{
+        background-color: #243f44;
+        cursor: default;
+    }
+
+    .favoritar{
+        display: flex;
+        color: rgb(245, 6, 46);
+        cursor: pointer;
+        border-radius: 2px;
+        padding: 5px;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 1%;
+    }
+
+    .favoritar i{
+        font-size: 16px;
+        font-weight: 600;
+        margin-right: 1%;
+        margin-top: 0.2%;
+    }
+
+    .favoritar p{
+        font-weight: 600;
+        white-space: nowrap;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .responsividade-descricao{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .responsividade-descricao .responsividade-detalhes{
+        margin-left: 0;
+    }
+}
+
+/*Responsividade galeria*/
+@media only screen and (max-width: 1000px){
+
+    main.galeria h1{
+        margin: auto;
+    }
+    
+    main.galeria section{
+        display: none;
+        text-align: center;
+        padding: 0;
+    }
+    
+    main.galeria section .container-layout{
+        display: flex;
+        flex-flow: row;
+        width: 100vw;
+        padding: 0 2% 2% 2%;
+        background: transparent;
+        margin-top: 1%;
+    }
+    
+    
+    main.galeria section .carousel{
+        background-color: transparent;
+        box-shadow: none;
+        width: 100%;
+    }
+    
+    main.galeria section .carousel img, main.galeria section .carousel video{
+        width: fit-content;
+    }
+    
+    main.galeria section.active-carrossel{
+        display: block;
+    }
+    
+    main.galeria .nav-imagens{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+    
+    main.galeria .nav-imagens img, main.galeria .nav-imagens video{
+        cursor: pointer;
+        display: block;
+        width: 100%;
+    }
+    
+    
+    .video-itemG{
+        margin-top: 1%;
+        width: 19%;
+        position: relative; /* Necessário para posicionar o ícone */
+        display: inline-block; /* Garante alinhamento correto */
+        z-index: 0;
+    }
+    
+    .video-itemG video {
+        display: block; /* Garante que o vídeo não seja tratado como inline */
+        min-width: 100%; /* O vídeo ocupa 100% da largura da div */
+        min-height: 100%; /* Mantém a proporção do vídeo */
+    }
+    
+    .video-itemG .video-icon {
+        content: "▶"; /* Ícone do vídeo */
+        font-size: 20px; /* Ajuste do tamanho do ícone */
+        color: white; /* Cor do ícone */
+        background-color: rgba(0, 0, 0, 0.5); /* Fundo semitransparente */
+        position: absolute; /* Posiciona sobre o vídeo */
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); /* Centraliza o ícone */
+        pointer-events: none; /* Garante que o ícone não interfira nos cliques */
+        padding: 5px 10px; /* Ajusta o espaço interno do ícone */
+    }
+    
+    .ant, .prox {
+        cursor: pointer;
+        font-size: 24px;
+        padding: 10px;
+        color: white;
+        background-color: transparent;
+        border: none;
+        border-radius: 5px;
+    }
+    
+}
+
+@media only screen and (max-width: 700px){
+    main.galeria section .carousel img, main.galeria section .carousel video{
+        width: 100%;
+    }
+}
