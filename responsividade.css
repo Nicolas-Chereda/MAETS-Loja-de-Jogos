@@ -182,8 +182,6 @@
     }
 }
 
-
-
 /*Responsividade Página Sobre*/
 @media screen and (min-width: 601px) and (max-width: 1000px) {
 
@@ -803,8 +801,21 @@
     }
 }
 
+
+/*Rodapé*/
 @media only screen and (max-width: 1000px){
     footer.rodape{
+        font-size: 0.8rem;
+    }
+}
+
+/*Resultados*/
+@media only screen and (max-width: 600px) {
+    main#resultados h1{
+        font-size: 1rem;
+    }
+
+    main#resultados h2{
         font-size: 0.8rem;
     }
 }
