@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="Nós da Maets somos uma plaforma de distribuição de jogos eletrônicos. Compre aqui seus jogos favoritos." />
+        <meta name="keywords" content="comprar jogos, steam, nuuvem, jogos, plataforma, Maets">
+        <meta name="author" content="Nicolas" />
+        <title>Maets - Cuphead</title>
+
+        <link rel="icon" href="img/maets.webp">
+        <!-- Bootstrap links-->
+        <link id="bootstrapLink" rel="icon" type="image/x-icon" href="assets/favicon.icon" />
+        <link id="bootstrapLink2" href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link id="bootstrapLink3" href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link id="bootstrapLink4" href="css/styles.css" rel="stylesheet" />
+
+        <!--Meu CSS-->
+        <link rel="stylesheet" href="css/estilo.css">
+        <link rel="stylesheet" href="css/responsividade.css">
+
+        <!--Meu JS-->
+        <script src="js/validar.js" defer></script>
+    </head>
+    <body>
+
+        <nav class="navbar">
+            <div class="menu-logo"><a href="index.html"><img src="img/logo(1).webp"></a></div>
+            
+            <div class="menu-itens">
+                <div class="container-menu"></div>
+                
+                <div class="botao-menu">
+                    <button class="abrir-menu" onclick="toggleMenu()">☰</button>
+                </div>
+                
+                <div class="menu-lateral">
+                    <ul>
+                        <li><a href="index.html" class="home"><i class="fi fi-rr-house-chimney"></i>Home</a></li>
+                        <li><a href="sobre.html" class="sobre"><i class="fi fi-rr-info"></i>Sobre</a></li>
+                        <li><a href="produtos.html" class="produtos"><i class="fi fi-rr-shopping-bag"></i></i>Produtos</a></li>
+                        <li><a href="galeria.html" class="galeria"><i class="fi fi-rr-picture"></i>Galeria</a></li>
+                        <li><a href="contato.html" class="contato"><i class="fi fi-rr-headset"></i>Contato</a></li>
+                        <li><div id="search-system">
+                            <input type="text" id="search-input" placeholder="Pesquise o jogo..." oninput="filterCards()">
+                        </div></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="menu-login">
+
+                <button id="loginBtn">Entrar</button>
+                
+                
+                <ul class="logado">
+                    <li class="preencher">
+                        <div id="status-logado">
+                            <p id="status"></p>
+                            <img src="img/perfil-de-usuario.png">
+                        </div>
+                        <ul id="dropdown">
+                            <li><button id="logoutBtn" onclick="signOut(auth)">Logout</button></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <!-- Modal container -->
+                <div id="modalContainer" style="display: none;"> <!--Conteúdo adicionado via js-->
+                    <div id="modalBackdrop" class="modal-backdrop"></div>
+                    <div id="modalContent" class="modal-content"></div>
+                </div>
+
+            </div>
+        </nav>
+
+        <main class="jogos">
+            <h2>Cuphead</h2>
+            <div class="container-layout">
+
+                <div class="container-carrossel">
+                    <div class="carousel">
+                        
+                        <video src="img-jogos/Cuphead/trailer.webm" class="active" controls id="video"></video>
+                        
+                        <img src="img-jogos/Cuphead/img-1.jpg" id="img1">
+                        <img src="img-jogos/Cuphead/img-2.jpg" id="img2">
+                        <img src="img-jogos/Cuphead/img-3.jpg" id="img3">
+                        <img src="img-jogos/Cuphead/img-4.jpg" id="img4">
+                        
+                        <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+                        <button class="next" onclick="changeSlide(1)">&#10095;</button>
+                    </div>
+                    <div class="nav-imagens">
+                        <div class="video-item">
+                            <video src="img-jogos/Cuphead/trailer.webm"></video>
+                            <span class="video-icon">▶</span>
+                        </div>
+                        <img src="img-jogos/Cuphead/img-1.jpg" class="nav1">
+                        <img src="img-jogos/Cuphead/img-2.jpg" class="nav2">
+                        <img src="img-jogos/Cuphead/img-3.jpg" class="nav3">
+                        <img src="img-jogos/Cuphead/img-4.jpg" class="nav4">                 
+                    </div>
+                </div>
+
+                <div class="descricao">
+
+                    <div class="responsividade-descricao">
+
+                        <div class="responsividade-imagem">
+                            <img src="img-jogos/Cuphead/Cuphead.jpg">
+                        </div>
+
+                        <div class="responsividade-detalhes">
+                            <p>Cuphead é um jogo de ação e tiros clássico, com enorme ênfase nas batalhas de chefes. Inspirado nas animações infantis da década de 1930, os visuais e efeitos sonoros foram minuciosamente recriados com as mesmíssimas técnicas dessa era, com destaque para desenhos feitos à mão, fundos em aquarela e gravações originais de jazz.</p>
+
+                            <p>
+                                <h3>Data de lançamento: 17/09/2020</h3>
+                                <h3>Desenvolvedor: Studio MHDR Entertainment</h3>
+                                <h3>Distribuidora: Studio MHDR Entertainment</h3>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="marcadores">
+                        <p>Marcadores populares para este produto:</p>
+                        <div class="marcador">
+                            <p>Desenho Animado</p>
+                            <p>Indie</p>
+                            <p>Difícil</p>
+                            <p>Trilha Sonora Boa</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-carrinho">
+                <div class="carrinho">
+                    <h3>+ Carrinho</h3>
+                    <p>R$ 36,99</p>
+                </div>
+
+                <div class="favoritar">
+                    <i class="fi fi-bs-heart"></i>
+                    <p>Adicionar aos favoritos</p>
+                </div>
+            </div>
+
+        </main>
+
+        <footer class="rodape">
+            <h5>Nicolas Pereira 2024 - &copyTodos os direitos reservados<br>*Trabalho Acadêmico sem fins lucrativos*</h5>
+        </footer>
+
+        <!--Meu JS-->
+        <script src="js/main.js"></script>
+        <script type="module" src="js/banco.js"></script>
+
+        <!--Bootstrap Scripts-->
+        <script src="js/JS.js"></script>
+        <script id="bootstrapScript" class="bootsrc="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <script id="bootstrapScript2" src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script id="bootstrapScript3" src="js/scripts.js"></script>
+        <script id="bootstrapScript4" src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
+</html>

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="Nós da Maets somos uma plaforma de distribuição de jogos eletrônicos. Compre aqui seus jogos favoritos." />
+        <meta name="keywords" content="comprar jogos, steam, nuuvem, jogos, plataforma, Maets">
+        <meta name="author" content="Nicolas" />
+        <title>Maets - Galeria</title>
+
+        <link rel="icon" href="img/maets.webp">
+        <!-- Bootstrap links-->
+        <link id="bootstrapLink" rel="icon" type="image/x-icon" href="assets/favicon.icon" />
+        <link id="bootstrapLink2" href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link id="bootstrapLink3" href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link id="bootstrapLink4" href="css/styles.css" rel="stylesheet" />
+
+        <!--Meu CSS-->
+        <link rel="stylesheet" href="css/estilo.css">
+        <link rel="stylesheet" href="css/responsividade.css">
+
+        <!--Meu JS-->
+        <script src="js/validar.js" defer></script>
+    </head>
+    <body>
+
+        <nav class="navbar">
+            <div class="menu-logo"><a href="index.html"><img src="img/logo(1).webp"></a></div>
+            
+            <div class="menu-itens">
+                <div class="container-menu"></div>
+                
+                <div class="botao-menu">
+                    <button class="abrir-menu" onclick="toggleMenu()">☰</button>
+                </div>
+                
+                <div class="menu-lateral">
+                    <ul>
+                        <li><a href="index.html" class="home"><i class="fi fi-rr-house-chimney"></i>Home</a></li>
+                        <li><a href="sobre.html" class="sobre"><i class="fi fi-rr-info"></i>Sobre</a></li>
+                        <li><a href="produtos.html" class="produtos"><i class="fi fi-rr-shopping-bag"></i></i>Produtos</a></li>
+                        <li><a href="galeria.html" class="galeria"><i class="fi fi-rr-picture"></i>Galeria</a></li>
+                        <li><a href="contato.html" class="contato"><i class="fi fi-rr-headset"></i>Contato</a></li>
+                        <li><div id="search-system">
+                            <input type="text" id="search-input" placeholder="Pesquise o jogo..." oninput="filterCards()">
+                        </div></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="menu-login">
+
+                <button id="loginBtn">Entrar</button>
+                
+                
+                <ul class="logado">
+                    <li class="preencher">
+                        <div id="status-logado">
+                            <p id="status"></p>
+                            <img src="img/perfil-de-usuario.png">
+                        </div>
+                        <ul id="dropdown">
+                            <li><button id="logoutBtn" onclick="signOut(auth)">Logout</button></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <!-- Modal container -->
+                <div id="modalContainer" style="display: none;"> <!--Conteúdo adicionado via js-->
+                    <div id="modalBackdrop" class="modal-backdrop"></div>
+                    <div id="modalContent" class="modal-content"></div>
+                </div>
+
+            </div>
+        </nav>
+
+
+        <main class="galeria"> 
+            <h1>Confira nossos produtos: </h1>
+
+            <section id="GOW-Galeria" class="active-carrossel">
+                <h2> <button class="ant">&#10094;</button> God Of War <button class="prox">&#10095;</button></h2>
+                <div class="container-layout">
+
+                    <div class="container-carrossel">
+                        <div class="carousel">
+                            
+                            <video src="img-jogos/GOW-2018/gow.webm" class="active" class="video" controls ></video>
+                            
+                            <img src="img-jogos/GOW-2018/img-1.jpg" class="img1">
+                            <img src="img-jogos/GOW-2018//img-2.jpg" class="img2">
+                            <img src="img-jogos/GOW-2018//img-3.jpg" class="img3">
+                            <img src="img-jogos/GOW-2018//img-4.jpg" class="img4">
+                            
+                            <button class="prev">&#10094;</button>
+                            <button class="next">&#10095;</button>
+                        </div>
+                        <div class="nav-imagens">
+                            <div class="video-itemG">
+                                <video src="img-jogos/GOW-2018/gow.webm"></video>
+                                <span class="video-icon">▶</span>
+                            </div>
+                            <img src="img-jogos/GOW-2018/img-1.jpg" class="nav1">
+                            <img src="img-jogos/GOW-2018//img-2.jpg" class="nav2">
+                            <img src="img-jogos/GOW-2018//img-3.jpg" class="nav3">
+                            <img src="img-jogos/GOW-2018//img-4.jpg" class="nav4">                 
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="HK-Galeria">
+                <h2> <button class="ant">&#10094;</button> Hollow Knight <button class="prox">&#10095;</button></h2>
+                <div class="container-layout">
+
+                    <div class="container-carrossel">
+                        <div class="carousel">
+                            
+                            <video src="img-jogos/Hollow-Knight/hollow-knight.webm" class="active" class="video" controls ></video>
+                            
+                            <img src="img-jogos/Hollow-Knight/img-1.jpg" class="img1">
+                            <img src="img-jogos/Hollow-Knight/img-2.jpg" class="img2">
+                            <img src="img-jogos/Hollow-Knight/img-3.jpg" class="img3">
+                            <img src="img-jogos/Hollow-Knight/img-4.jpg" class="img4">
+                            
+                            <button class="prev">&#10094;</button>
+                            <button class="next">&#10095;</button>
+                        </div>
+                        <div class="nav-imagens">
+                            <div class="video-itemG">
+                                <video src="img-jogos/Hollow-Knight/hollow-knight.webm"></video>
+                                <span class="video-icon">▶</span>
+                            </div>
+                            <img src="img-jogos/Hollow-Knight/img-1.jpg" class="nav1">
+                            <img src="img-jogos/Hollow-Knight/img-2.jpg" class="nav2">
+                            <img src="img-jogos/Hollow-Knight/img-3.jpg" class="nav3">
+                            <img src="img-jogos/Hollow-Knight/img-4.jpg" class="nav4">                 
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="FIFA-Galeria">
+                <h2> <button class="ant">&#10094;</button> EA Sports FC 25 <button class="prox">&#10095;</button></h2>
+                <div class="container-layout">
+
+                    <div class="container-carrossel">
+                        <div class="carousel">
+                            
+                            <video src="img-jogos/FIFA/trailer.webm" class="active" class="video" controls ></video>
+                            
+                            <img src="img-jogos/FIFA/img-1.jpg" class="img1">
+                            <img src="img-jogos/FIFA/img-2.jpg" class="img2">
+                            <img src="img-jogos/FIFA/img-3.jpg" class="img3">
+                            <img src="img-jogos/FIFA/img-4.jpg" class="img4">
+                            
+                            <button class="prev">&#10094;</button>
+                            <button class="next">&#10095;</button>
+                        </div>
+                        <div class="nav-imagens">
+                            <div class="video-itemG">
+                                <video src="img-jogos/FIFA/trailer.webm"></video>
+                                <span class="video-icon">▶</span>
+                            </div>
+                            <img src="img-jogos/FIFA/img-1.jpg" class="nav1">
+                            <img src="img-jogos/FIFA/img-2.jpg" class="nav2">
+                            <img src="img-jogos/FIFA/img-3.jpg" class="nav3">
+                            <img src="img-jogos/FIFA/img-4.jpg" class="nav4">                 
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="StardewValley-Galeria">
+                <h2> <button class="ant">&#10094;</button> Stardew Valley <button class="prox">&#10095;</button></h2>
+                <div class="container-layout">
+
+                    <div class="container-carrossel">
+                        <div class="carousel">
+                            
+                            <video src="img-jogos/Stardew-Valley/trailer.webm" class="active" class="video" controls ></video>
+                            
+                            <img src="img-jogos/Stardew-Valley/img-1.jpg" class="img1">
+                            <img src="img-jogos/Stardew-Valley/img-2.jpg" class="img2">
+                            <img src="img-jogos/Stardew-Valley/img-3.jpg" class="img3">
+                            <img src="img-jogos/Stardew-Valley/img-4.jpg" class="img4">
+                            
+                            <button class="prev">&#10094;</button>
+                            <button class="next">&#10095;</button>
+                        </div>
+                        <div class="nav-imagens">
+                            <div class="video-itemG">
+                                <video src="img-jogos/Stardew-Valley/trailer.webm"></video>
+                                <span class="video-icon">▶</span>
+                            </div>
+                            <img src="img-jogos/Stardew-Valley/img-1.jpg" class="nav1">
+                            <img src="img-jogos/Stardew-Valley/img-2.jpg" class="nav2">
+                            <img src="img-jogos/Stardew-Valley/img-3.jpg" class="nav3">
+                            <img src="img-jogos/Stardew-Valley/img-4.jpg" class="nav4">                 
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="DB-Galeria">
+                <h2> <button class="ant">&#10094;</button> Dragon Ball: Sparking Zero <button class="prox">&#10095;</button></h2>
+                <div class="container-layout">
+                    <div class="container-carrossel">
+                        <div class="carousel">
+                            
+                            <video src="img-jogos/DB-Sparking/trailer.mp4" class="active" class="video" controls ></video>
+                            
+                            <img src="img-jogos/DB-Sparking/img-1.jpg" class="img1">
+                            <img src="img-jogos/DB-Sparking/img-2.jpg" class="img2">
+                            <img src="img-jogos/DB-Sparking/img-3.jpg" class="img3">
+                            <img src="img-jogos/DB-Sparking/img-4.jpg" class="img4">
+                            
+                            <button class="prev">&#10094;</button>
+                            <button class="next">&#10095;</button>
+                        </div>
+                        <div class="nav-imagens">
+                            <div class="video-itemG">
+                                <video src="img-jogos/DB-Sparking/trailer.mp4"></video>
+                                <span class="video-icon">▶</span>
+                            </div>
+                            <img src="img-jogos/DB-Sparking/img-1.jpg" class="nav1">
+                            <img src="img-jogos/DB-Sparking/img-2.jpg" class="nav2">
+                            <img src="img-jogos/DB-Sparking/img-3.jpg" class="nav3">
+                            <img src="img-jogos/DB-Sparking/img-4.jpg" class="nav4">                 
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+
+        <footer class="rodape">
+            <h5>Nicolas Pereira 2024 - &copyTodos os direitos reservados<br>*Trabalho Acadêmico sem fins lucrativos*</h5>
+        </footer>
+
+        <!--Meu JS-->
+        <script src="js/galeria.js"></script>
+        <script type="module" src="js/banco.js"></script>
+
+        <!--Bootstrap Scripts-->
+        <script src="js/JS.js"></script>
+        <script id="bootstrapScript" class="bootsrc="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <script id="bootstrapScript2" src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script id="bootstrapScript3" src="js/scripts.js"></script>
+        <script id="bootstrapScript4" src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
+</html>
