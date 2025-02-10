@@ -1,27 +1,3 @@
-// Importação dos módulos necessários do Firebase
-import { 
-    initializeApp 
-} from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js";
-
-import { 
-    getAuth, 
-    createUserWithEmailAndPassword, 
-    signInWithEmailAndPassword, 
-    signOut, 
-    onAuthStateChanged, 
-    updateProfile 
-} from "https://www.gstatic.com/firebasejs/9.15.0/firebase-auth.js";
-
-// Configuração do Firebase
-const firebaseConfig = {
-    apiKey: "AIzaSyDbcAR6rLoyHFiNFS6HgaRnudYCYK2H-LQ",
-    authDomain: "maets-5eb14.firebaseapp.com",
-    projectId: "maets-5eb14",
-    storageBucket: "maets-5eb14.firebasestorage.app",
-    messagingSenderId: "1028239878737",
-    appId: "1:1028239878737:web:c711456d5d6cd7ca2a6670"
-};
-
 // Inicializando Firebase
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
